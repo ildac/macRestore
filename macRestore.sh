@@ -68,6 +68,7 @@ apps=(
   dropbox
   evernote
   google-chrome
+  yed
   mysqlworkbench
   spotify
   skype
@@ -116,21 +117,14 @@ brew cask cleanup
 # Try to do it with DropBoxCli
 http://www.dropboxwiki.com/tips-and-tricks/using-the-official-dropbox-command-line-interface-cli#Installation
 
+echo "At this point, you need con open your dropbox and start the file sync."
+echo "When the sync is done thanks to mackup I will restore all your app settings"
+echo "Did the sync of mackup folder end? [Enter when ready]"
+read answer
+
 # Macup
 # Install
 pip install mackup
 
 # Restore from DropBox
 mackup restore 
-
-
-
-
-COnfig file:
-(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
-~).
-HISTFILE=~/.histfile
-
-curl -L http://install.ohmyz.sh | sh
-
-theme sunrise
