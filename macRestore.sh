@@ -41,7 +41,10 @@ binaries=(
   git
   zsh
   wget
+  exercism
 )
+
+# to configure exercism go to help.exercism.io
 
 # Add here the zsh configuration, if needed...
 echo "installing ho-my-zsh..."
@@ -67,6 +70,7 @@ apps=(
   dash	
   dropbox
   evernote
+  freeplane
   google-chrome
   yed
   mysqlworkbench
@@ -76,6 +80,7 @@ apps=(
   telegram
   textmate
   the-unarchiver
+  toggldesktop
   totalterminal
   utorrent
   vagrant
