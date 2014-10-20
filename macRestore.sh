@@ -14,34 +14,27 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Tap repos
+brew tap homebrew/dupes
+brew tap homebrew/binary
+brew tap homebrew/science
+
 # Update homebrew recipes
 brew update
 
-# Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
-
-# Install Bash 4
-brew install bash
-
-# Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
-
-# Installing exercism
-brew tap homebrew/binary
-brew install exercism
-
 # Binaries directly from Homebrew
 binaries=(
+  coreutils
+  findutils
+  bash
+  homebrew/dupes/grep
   python
   node
   git
   zsh
   wget
   exercism
+  r
 )
 
 # to configure exercism go to help.exercism.io
