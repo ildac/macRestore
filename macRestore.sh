@@ -64,6 +64,7 @@ apps=(
   dropbox
   evernote
   freeplane
+  gimp
   google-chrome
   yed
   mysqlworkbench
