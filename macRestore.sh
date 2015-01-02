@@ -60,7 +60,8 @@ apps=(
   caffeine
   coconutBattery
   copy
-  dash	
+  dash
+  darktable
   dropbox
   evernote
   freeplane
